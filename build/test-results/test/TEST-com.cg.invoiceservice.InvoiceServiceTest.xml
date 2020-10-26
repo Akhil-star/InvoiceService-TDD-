@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cg.invoiceservice.InvoiceServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-26T11:12:32" hostname="DESKTOP-AURK5V2" time="0.002">
+<testsuite name="com.cg.invoiceservice.InvoiceServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-26T11:44:28" hostname="DESKTOP-AURK5V2" time="0.003">
   <properties/>
-  <testcase name="givenLessDistanceAndTimeShouldReturnMinimumFare" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.002"/>
+  <testcase name="givenMultipleRidesShouldReturnTotalfare" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
