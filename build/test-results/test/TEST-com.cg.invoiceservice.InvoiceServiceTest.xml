@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cg.invoiceservice.InvoiceServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-10-27T17:58:57" hostname="DESKTOP-AURK5V2" time="0.086">
+<testsuite name="com.cg.invoiceservice.InvoiceServiceTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2020-10-28T02:23:07" hostname="DESKTOP-AURK5V2" time="0.087">
   <properties/>
-  <testcase name="givenMultipleRidesForuserid_ShouldReturnTotalFare" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.034"/>
-  <testcase name="givenUserIdAndRides_ShouldReturnInvoiceSummary" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.024"/>
+  <testcase name="givenMultipleRidesForuserid_ShouldReturnTotalFare" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.045"/>
+  <testcase name="givenUserIdAndRides_ShouldReturnInvoiceSummary" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.015"/>
   <testcase name="givenEmptyRideswithuserid_Shouldthrowexception" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.012"/>
-  <testcase name="givenLessDistanceAndTimeShouldReturnMinimumFare" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.001"/>
+  <testcase name="givenMultipleRidesShouldReturnInvoiceSummaryNoType" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.0"/>
+  <testcase name="givenLessDistanceAndTimeShouldReturnMinimumFare" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.0"/>
   <testcase name="givenMultipleRidesEmptyuserid_Shouldthrowexception" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.007"/>
   <testcase name="givenDistanceAndTimeShouldReturnTotalFare" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.0"/>
-  <testcase name="givenNullRideswithEmptyuserId_ShouldthrowException" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.006"/>
+  <testcase name="givenLessDistanceAndTimeShouldReturnMinimumFareForPremium" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.0"/>
+  <testcase name="givenDistanceAndTimeShouldReturnTotalFareForPremium" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.0"/>
+  <testcase name="givenMultipleRidesShouldReturnInvoiceSummaryOnePremiumAndOneNormal" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.0"/>
+  <testcase name="givenNullRideswithEmptyuserId_ShouldthrowException" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.005"/>
+  <testcase name="givenMultipleRidesShouldReturnInvoiceSummaryForPremium" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.0"/>
   <testcase name="givenMultipleRidesShouldReturnInvoiceSummary" classname="com.cg.invoiceservice.InvoiceServiceTest" time="0.0"/>
-  <system-out><![CDATA[[Ride{distance=2.0, time=5}, Ride{distance=0.1, time=1}]
-[Ride{distance=2.0, time=5}, Ride{distance=0.1, time=1}]
+  <system-out><![CDATA[[Ride{distance=2.0, time=5, cabType=NORMAL}, Ride{distance=0.1, time=1, cabType=NORMAL}]
+[Ride{distance=2.0, time=5, cabType=NORMAL}, Ride{distance=0.1, time=1, cabType=NORMAL}]
 InvoiceSummary{numOfRides=2, totalFare=30.0, average=15.0}
 InvoiceSummary{numOfRides=2, totalFare=30.0, average=15.0}
 ]]></system-out>
